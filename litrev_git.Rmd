@@ -60,7 +60,7 @@ png(filename = "ncp_fig.png",
   ) 
 
 ncp_fig = ncp %>% filter(ecozone =="overall") %>% ggplot(aes(x = reorder(NCP, -percent), y = percent, fill = category)) + geom_bar(stat= "identity") +
-  scale_fill_manual(values = c("#b2df8a", "#ffb3b3", "#66cccc")) + 
+  scale_fill_manual(values = c("#ffb3b3", "#66cccc", "#b2df8a")) + 
   
               labs(x = "NCPs", y = "% of occurance", fill = "NCP Categories") + 
   scale_y_continuous(labels = scales::percent) +
@@ -81,9 +81,30 @@ dev.off()
 ```
 COMBINED FIGURE 10 and 11: DIRECT AND INDIRECT DRIVERS
 ```{r}
-ncp = read.csv('drivers.csv', header = TRUE, sep = ",")
+links = read.csv('drivers.csv', header = TRUE, sep = ",")
+
+nodes <- data.frame(
+  name=c(as.character(links$source), 
+  as.character(links$target)) %>% unique()
+)
 
 
+links$IDsource <- match(links$source, nodes$name)-1 
+links$IDtarget <- match(links$target, nodes$name)-1
+
+#this is when filter is not applied:
+nodes$group = as.factor(c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "j", "k", "j", "l", "l", rep("k", 5), "j", "k", "l", "l"))
+#links$group = as.factor(c(rep("g1", 8), rep("g2", 7), rep("g3", 5), rep("g4", 3), rep("g5", 3), rep("g6",2), "g7", "g8"))
+my_color =  'd3.scaleOrdinal() .domain(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "negative", "positive"]) .range(["#decbe4", "#d9d9d9","#fddaec", "#fb6a4a", "#fed9a6", "#b3cde3", "#e5d8bd", "#ccffe6", "#ffd9cc", "#ffb3b3", "#b2df8a", "#66cccc", "#fbb4ae", "#ccebc5"])'
+
+
+# Make the Network
+drivers = sankeyNetwork(Links = links, Nodes = nodes,
+              Source = "IDsource", Target = "IDtarget",
+              Value = "value", NodeID = "name", colourScale = my_color, NodeGroup = "group", LinkGroup = "type",
+              sinksRight = TRUE, nodeWidth = 15, nodePadding = 6, fontSize = 18)
+
+drivers
 
 ```
 
