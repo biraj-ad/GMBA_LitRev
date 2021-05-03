@@ -81,6 +81,9 @@ dev.off()
 ```
 COMBINED FIGURE 10 and 11: DIRECT AND INDIRECT DRIVERS
 ```{r}
+ncp = read.csv('drivers.csv', header = TRUE, sep = ",")
+
+
 
 ```
 
