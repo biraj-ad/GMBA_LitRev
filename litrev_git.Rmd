@@ -47,7 +47,7 @@ library(dplyr)
 
 ```
 
-FIGURE 7
+FIGURE 7: Type of NCP studied
 ```{r}
 ncp = read.csv('ncp_all_3May21.csv', header = TRUE, sep = ",")
 ncp = ncp %>% filter(ecozone == "overall")
@@ -75,6 +75,12 @@ ncp_fig = ncp %>% filter(ecozone =="overall") %>% ggplot(aes(x = reorder(NCP, -p
                     panel.grid.major = element_line(size = 0.15, linetype = "solid", colour = "#F0F0F0"),
                     panel.grid.minor = element_line(size = 0.15, linetype = "solid", colour = "#F0F0F0"))+
               coord_flip() 
-  ncp_fig
+ 
+ncp_fig
+dev.off() 
+```
+COMBINED FIGURE 10 and 11: DIRECT AND INDIRECT DRIVERS
+```{r}
+
 ```
 
