@@ -1,0 +1,69 @@
+NCP,ecozone,name,count,percent,order
+Habitat creaiton and maintenance (HAB),mountain,1. Habitat creation and maintenance,11,0.24,18
+Pollination and dispersal of seeds and other propagules (POL),mountain,2. Pollination and dispersal of seeds and other propagules,2,0.04,17
+Regulation of air quality (AIR),mountain,3. Regulation of air quality,2,0.04,16
+Regulation of climate (CLI),mountain,4. Regulation of climate,9,0.2,15
+"Regulation of freshwater quantity, location and timing (WQN)",mountain,"6. Regulation of freshwater quantity, location and timing",10,0.22,14
+Regulation of freshwater and coastal water quality (WQL),mountain,7. Regulation of freshwater and coastal water quality,4,0.09,13
+"Formation, protection and decontamination of soils and sediments (SOI)",mountain,"8. Formation, protection and decontamination of soils and sediments",13,0.28,12
+Regulation of hazards and extreme events (HAZ),mountain,9. Regulation of hazards and extreme events,8,0.17,11
+Regulation of detrimental organisms and biological processes (ORG),mountain,10. Regulation of detrimental organisms and biological processes,7,0.15,10
+Energy (NRG),mountain,11. Energy,20,0.43,9
+Food and feed (FOD),mountain,12. Food and feed,26,0.57,8
+"Materials, companionship and labor (MAT)",mountain,"13. Materials, companionship and labor",19,0.41,7
+"Medicinal, biochemical and genetic resources (MED)",mountain,"14. Medicinal, biochemical and genetic resources",13,0.28,6
+Learning and inspiration (INS),mountain,15. Learning and inspiration,1,0.02,4
+Physical and psychological experiences (EXP),mountain,16. Physical and psychological experiences,11,0.24,3
+Supporting identities (IDE),mountain,17. Supporting identities,8,0.17,2
+Maintenance of options (OPT),mountain,18. Maintenance of options,0,0,1
+Habitat creaiton and maintenance (HAB),hill,1. Habitat creation and maintenance,26,0.36,18
+Pollination and dispersal of seeds and other propagules (POL),hill,2. Pollination and dispersal of seeds and other propagules,3,0.04,17
+Regulation of air quality (AIR),hill,3. Regulation of air quality,7,0.1,16
+Regulation of climate (CLI),hill,4. Regulation of climate,16,0.22,15
+"Regulation of freshwater quantity, location and timing (WQN)",hill,"6. Regulation of freshwater quantity, location and timing",24,0.33,14
+Regulation of freshwater and coastal water quality (WQL),hill,7. Regulation of freshwater and coastal water quality,11,0.15,13
+"Formation, protection and decontamination of soils and sediments (SOI)",hill,"8. Formation, protection and decontamination of soils and sediments",23,0.32,12
+Regulation of hazards and extreme events (HAZ),hill,9. Regulation of hazards and extreme events,10,0.14,11
+Regulation of detrimental organisms and biological processes (ORG),hill,10. Regulation of detrimental organisms and biological processes,7,0.1,10
+Energy (NRG),hill,11. Energy,35,0.49,9
+Food and feed (FOD),hill,12. Food and feed,41,0.57,8
+"Materials, companionship and labor (MAT)",hill,"13. Materials, companionship and labor",34,0.47,7
+"Medicinal, biochemical and genetic resources (MED)",hill,"14. Medicinal, biochemical and genetic resources",19,0.26,6
+Learning and inspiration (INS),hill,15. Learning and inspiration,6,0.08,4
+Physical and psychological experiences (EXP),hill,16. Physical and psychological experiences,19,0.26,3
+Supporting identities (IDE),hill,17. Supporting identities,17,0.24,2
+Maintenance of options (OPT),hill,18. Maintenance of options,0,0,1
+Habitat creaiton and maintenance (HAB),terai,1. Habitat creation and maintenance,24,0.36,18
+Pollination and dispersal of seeds and other propagules (POL),terai,2. Pollination and dispersal of seeds and other propagules,4,0.06,17
+Regulation of air quality (AIR),terai,3. Regulation of air quality,3,0.05,16
+Regulation of climate (CLI),terai,4. Regulation of climate,14,0.21,15
+"Regulation of freshwater quantity, location and timing (WQN)",terai,"6. Regulation of freshwater quantity, location and timing",17,0.26,14
+Regulation of freshwater and coastal water quality (WQL),terai,7. Regulation of freshwater and coastal water quality,5,0.08,13
+"Formation, protection and decontamination of soils and sediments (SOI)",terai,"8. Formation, protection and decontamination of soils and sediments",15,0.23,12
+Regulation of hazards and extreme events (HAZ),terai,9. Regulation of hazards and extreme events,7,0.11,11
+Regulation of detrimental organisms and biological processes (ORG),terai,10. Regulation of detrimental organisms and biological processes,8,0.12,10
+Energy (NRG),terai,11. Energy,26,0.39,9
+Food and feed (FOD),terai,12. Food and feed,27,0.41,8
+"Materials, companionship and labor (MAT)",terai,"13. Materials, companionship and labor",24,0.36,7
+"Medicinal, biochemical and genetic resources (MED)",terai,"14. Medicinal, biochemical and genetic resources",10,0.15,6
+Learning and inspiration (INS),terai,15. Learning and inspiration,2,0.03,4
+Physical and psychological experiences (EXP),terai,16. Physical and psychological experiences,23,0.35,3
+Supporting identities (IDE),terai,17. Supporting identities,14,0.21,2
+Maintenance of options (OPT),terai,18. Maintenance of options,2,0.03,1
+Habitat creaiton and maintenance (HAB),overall,1. Habitat creation and maintenance,49,0.36,18
+Pollination and dispersal of seeds and other propagules (POL),overall,2. Pollination and dispersal of seeds and other propagules,9,0.07,17
+Regulation of air quality (AIR),overall,3. Regulation of air quality,10,0.07,16
+Regulation of climate (CLI),overall,4. Regulation of climate,27,0.2,15
+"Regulation of freshwater quantity, location and timing (WQN)",overall,"6. Regulation of freshwater quantity, location and timing",43,0.31,14
+Regulation of freshwater and coastal water quality (WQL),overall,7. Regulation of freshwater and coastal water quality,17,0.12,13
+"Formation, protection and decontamination of soils and sediments (SOI)",overall,"8. Formation, protection and decontamination of soils and sediments",36,0.26,12
+Regulation of hazards and extreme events (HAZ),overall,9. Regulation of hazards and extreme events,18,0.13,11
+Regulation of detrimental organisms and biological processes (ORG),overall,10. Regulation of detrimental organisms and biological processes,18,0.13,10
+Energy (NRG),overall,11. Energy,60,0.44,9
+Food and feed (FOD),overall,12. Food and feed,74,0.54,8
+"Materials, companionship and labor (MAT)",overall,"13. Materials, companionship and labor",61,0.45,7
+"Medicinal, biochemical and genetic resources (MED)",overall,"14. Medicinal, biochemical and genetic resources",35,0.26,6
+Learning and inspiration (INS),overall,15. Learning and inspiration,9,0.07,4
+Physical and psychological experiences (EXP),overall,16. Physical and psychological experiences,44,0.32,3
+Supporting identities (IDE),overall,17. Supporting identities,33,0.24,2
+Maintenance of options (OPT),overall,18. Maintenance of options,2,0.01,1
