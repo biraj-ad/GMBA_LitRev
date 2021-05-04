@@ -79,6 +79,46 @@ ncp_fig = ncp %>% filter(ecozone =="overall") %>% ggplot(aes(x = reorder(NCP, -p
 ncp_fig
 dev.off() 
 ```
+
+ALTERNATIVE OPTION: Combination of Figure 7, Table 3 and Figure 9
+
+```{r}
+try = read.csv('try.csv', header = TRUE, sep = ",")
+
+try = try %>% group_by(NCP) %>% 
+  arrange(NCP, desc(Trend)) %>%
+  mutate(lab_ypos = cumsum(count) - 0.5 * count)
+
+png(filename = "ncp_fig_with_trends.png",            
+  width = 1500,        
+  height = 1000,
+  res = 300,  
+  ) 
+
+
+ggplot(try, aes(x = reorder(NCP, count, FUN = sum), y = count)) + geom_col(aes(fill = Trend), width = 0.7) + 
+ scale_fill_manual(values = c("#fc8d62", "#a6d854", "#a6a6a6")) + 
+  geom_text(size = 1.7, aes(y = lab_ypos, label = for_label, group = Trend)) + 
+              labs(x = "NCPs", y = "Occurrence", fill = "") + 
+  
+  #scale_y_continuous(labels = scales::percent) +
+              theme(legend.position = "bottom",
+                    legend.title = element_text(size = 6),
+                    legend.key.size = unit(0.5, 'cm'),
+                    legend.text = element_text(size = 5),
+                    axis.title.x = element_text(size = 7),
+                    axis.title.y = element_text(size = 7),
+                    axis.text = element_text(size = 5),
+                    panel.background = element_rect(fill = "white"),
+                    panel.grid.major = element_line(size = 0.15, linetype = "solid", colour = "#F0F0F0"),
+                    panel.grid.minor = element_line(size = 0.15, linetype = "solid", colour = "#F0F0F0"))+
+  coord_flip() 
+  
+  
+```
+
+
+
 COMBINED FIGURE 10 and 11: DIRECT AND INDIRECT DRIVERS
 ```{r}
 links = read.csv('drivers.csv', header = TRUE, sep = ",")
@@ -107,4 +147,5 @@ drivers = sankeyNetwork(Links = links, Nodes = nodes,
 drivers
 
 ```
+
 
